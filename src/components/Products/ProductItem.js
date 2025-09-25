@@ -8,9 +8,10 @@ import './ProductItem.css';
 // import { ProductsContext } from '../../context/products-content';
 
 const ProductItem = props => {
+  console.log("RENDERING")
   // const dispatch = useDispatch();
   // const toggleFav = useContext(ProductsContext).toggleFav
-  const dispatch = useStore()[1]
+  const dispatch = useStore(false)[1]
 
   const toggleFavHandler = () => {
     // dispatch(toggleFav(props.id));
